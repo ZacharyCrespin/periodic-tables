@@ -1,0 +1,14 @@
+---
+title: Home
+layout: 'basic.njk'
+---
+    <h1>Latest</h1>
+    <div class="latest">
+      {%- for table in collections.table -%}
+      <div class="table">
+        <h2>{{ table.data.name }}</h2>
+        <img src="/images/{{ table.data.id }}.png" alt="Table"><br>
+        <a class="button" href="/table/{{ table.data.id }}">View / Download</a>
+      </div>
+      {%- endfor -%}
+    </div>
