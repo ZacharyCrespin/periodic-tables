@@ -2,9 +2,9 @@
 title: Home
 layout: 'basic.njk'
 ---
-    <h1>Latest</h1>
+    <h1>Latest Free Periodic Tables</h1>
     <div class="latest">
-      {%- for table in collections.table -%}
+      {%- for table in collections.table | reverse -%}
       <div class="table">
         <h2>{{ table.data.name }}</h2>
         <img src="/images/{{ table.data.id }}.png" alt="Table"><br>
