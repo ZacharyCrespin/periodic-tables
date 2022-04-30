@@ -27,7 +27,7 @@ a:hover {
 }
 .menu {
     text-align: right;
-    margin: 0px 3rem;
+    margin: 1rem 3rem;
 }
 .menu a {
     display: inline-block;
@@ -45,6 +45,7 @@ a:hover {
     padding-bottom: 1rem;
     border: 1px solid lightgray;
     border-radius: 15px;
+    box-shadow: 2px 2px 6px 0px #00000040;
 }
 .table:hover {
     border: 1px solid gray;
