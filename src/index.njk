@@ -1,13 +1,20 @@
 ---
 title: Home
-layout: 'basic.njk'
+layout: 'gallery.njk'
 ---
     <h1>Free Periodic Tables</h1>
-    <div class="latest">
+    <div class="sort">
+      <a href="/tag/simple">simple</a>
+      <a href="/tag/basic">basic</a>
+      <a href="/tag/round">round</a>
+      <a href="/tag/dark">dark</a>
+      <a href="/tag/light">light</a>
+    </div>
+    <div class="gallery">
       {%- for table in collections.table | reverse -%}
       <div class="table">
         <h2>{{ table.data.name }}</h2>
-        <img src="/table/{{ table.data.id }}.png" alt="Table"><br>
+        <img src="/table/{{ table.data.id }}.png" alt="Table" tags="{{ table.data.tags }}"><br>
         <a class="button" href="/table/{{ table.data.id }}">View / Download</a>
       </div>
       {%- endfor -%}

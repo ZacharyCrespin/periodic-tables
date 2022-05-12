@@ -1,0 +1,13 @@
+---
+title: Dark Periodic Tables
+layout: 'tag.njk'
+---
+    <div class="gallery">
+      {%- for dark in collections.dark | reverse -%}
+      <div class="table">
+        <h2>{{ dark.data.name }}</h2>
+        <img src="/table/{{ dark.data.id }}.png" alt="Table"><br>
+        <a class="button" href="/table/{{ dark.data.id }}">View / Download</a>
+      </div>
+      {%- endfor -%}
+    </div>

@@ -1,0 +1,13 @@
+---
+title: Light Periodic Tables
+layout: 'tag.njk'
+---
+    <div class="gallery">
+      {%- for light in collections.light | reverse -%}
+      <div class="table">
+        <h2>{{ light.data.name }}</h2>
+        <img src="/table/{{ light.data.id }}.png" alt="Table"><br>
+        <a class="button" href="/table/{{ light.data.id }}">View / Download</a>
+      </div>
+      {%- endfor -%}
+    </div>

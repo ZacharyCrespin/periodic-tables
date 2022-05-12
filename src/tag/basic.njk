@@ -1,0 +1,13 @@
+---
+title: Basic Periodic Tables
+layout: 'tag.njk'
+---
+    <div class="gallery">
+      {%- for basic in collections.basic | reverse -%}
+      <div class="table">
+        <h2>{{ basic.data.name }}</h2>
+        <img src="/table/{{ basic.data.id }}.png" alt="Table"><br>
+        <a class="button" href="/table/{{ basic.data.id }}">View / Download</a>
+      </div>
+      {%- endfor -%}
+    </div>

@@ -33,6 +33,22 @@ a:hover {
 .menu a:hover {
     text-decoration: underline;
 }
+.sort {
+    margin: 1.5rem 1rem;
+    text-align: left;
+}
+.sort a {
+    margin: .5rem;
+    padding: .5ch 1ch;
+    color: black;
+    text-decoration: none;
+    border-radius: 100vh;
+    border: 1px solid lightgray;
+    box-shadow: 2px 2px 6px 0px #00000040;
+}
+.sort a:hover {
+    border: 1px solid gray;
+}
 .table {
     display: inline-block;
     width: calc(50% - 2rem);
