@@ -34,7 +34,8 @@ a:hover {
     text-decoration: underline;
 }
 .sort {
-    margin: 1.5rem 1rem;
+    padding: 1rem;
+    margin: 0;
     text-align: left;
 }
 .sort a {
@@ -48,6 +49,14 @@ a:hover {
 }
 .sort a:hover {
     border: 1px solid gray;
+}
+@media only screen and (max-width: 600px) {
+    .sort {
+        max-width: 100%;
+        overflow: hidden;
+        overflow-x: scroll;
+        white-space: nowrap;
+    }
 }
 .table {
     display: inline-block;
