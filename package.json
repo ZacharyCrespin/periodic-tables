@@ -5,5 +5,23 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "^1.0.0"
-  }
+  },
+  "name": "periodic-tables",
+  "description": "[periodictables.zacharyc.site](https://periodictables.zacharyc.site)",
+  "version": "1.0.4",
+  "main": "public/index.html",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Z-C-Code/periodic-tables.git"
+  },
+  "keywords": [
+    "periodic-tables",
+    "periodic-table"
+  ],
+  "author": "Zachary C <contact@zacharyc.site> (https://zacharyc.site)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Z-C-Code/periodic-tables/issues"
+  },
+  "homepage": "https://periodictables.zacharyc.site"
 }

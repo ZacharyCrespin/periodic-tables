@@ -1,4 +1,0 @@
-Sitemap: https://freeperiodictables.web.app/sitemap.xml
-
-User-agent: *
-Disallow: /404

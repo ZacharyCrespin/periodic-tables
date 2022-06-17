@@ -6,23 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="/images/icon.png">
     <link rel="stylesheet" href="/css/style.css">
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TTYGX6DSW7"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-TTYGX6DSW7');
-    </script>
-    
-    <script type="text/javascript">
-      (function(c,l,a,r,i,t,y){
-          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-      })(window, document, "clarity", "script", "bi2lthqsyf");
-    </script>
+{% include 'analytics.njk' %}
 </head>
 <body>
     <header>
@@ -42,9 +26,6 @@
       </div>
 {{ content | safe }}
     </main>
-    <footer>
-      <p>Created By <a href="https://zacharyc.site">Zachary C</a></p>
-      <p>Help / Requests <a href="mailto:periodictables@zacharyc.site">periodictables@zacharyc.site</a></p>
-    </footer>
+{% include 'footer.njk' %}
 </body>
 </html>
