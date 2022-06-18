@@ -2,62 +2,74 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
   <loc>https://periodictables.zacharyc.site</loc>
-  <lastmod>2022-04-29T00:41:06+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://periodictables.zacharyc.site/table/1</loc>
-  <lastmod>2022-04-29T00:41:06+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>0.90</priority>
 </url>
 <url>
   <loc>https://periodictables.zacharyc.site/table/2</loc>
-  <lastmod>2022-04-29T00:41:06+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>0.90</priority>
 </url>
 <url>
   <loc>https://periodictables.zacharyc.site/table/3</loc>
-  <lastmod>2022-04-29T00:41:06+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>0.90</priority>
 </url>
 <url>
   <loc>https://periodictables.zacharyc.site/table/4</loc>
-  <lastmod>2022-04-29T00:41:06+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>0.90</priority>
 </url>
 <url>
   <loc>https://periodictables.zacharyc.site/table/5</loc>
-  <lastmod>2022-04-29T00:41:06+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>0.90</priority>
 </url>
 <url>
   <loc>https://periodictables.zacharyc.site/table/6</loc>
-  <lastmod>2022-04-29T00:41:06+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>0.90</priority>
 </url>
 <url>
   <loc>https://periodictables.zacharyc.site/table/7</loc>
-  <lastmod>2022-04-29T00:41:06+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>0.90</priority>
 </url>
 <url>
   <loc>https://periodictables.zacharyc.site/table/8</loc>
-  <lastmod>2022-04-29T00:41:06+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>0.90</priority>
 </url>
 <url>
   <loc>https://periodictables.zacharyc.site/table/9</loc>
-  <lastmod>2022-04-29T00:41:06+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>0.90</priority>
 </url>
 <url>
   <loc>https://periodictables.zacharyc.site/table/10</loc>
-  <lastmod>2022-04-29T00:41:06+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>0.90</priority>
 </url>
 <url>
   <loc>https://periodictables.zacharyc.site/table/11</loc>
-  <lastmod>2022-04-29T00:41:06+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://periodictables.zacharyc.site/table/12</loc>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://periodictables.zacharyc.site/tag/dark</loc>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://periodictables.zacharyc.site/tag/light</loc>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://periodictables.zacharyc.site/tag/basic</loc>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://periodictables.zacharyc.site/tag/round</loc>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://periodictables.zacharyc.site/tag/simple</loc>
+  <priority>0.90</priority>
 </url>
 </urlset>
