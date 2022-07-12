@@ -6,7 +6,7 @@ layout: 'tag.njk'
       {%- for round in collections.round | reverse -%}
       <div class="table">
         <h2>{{ round.data.name }}</h2>
-        <img src="/table/{{ round.data.id }}.png" alt="Table"><br>
+        <img src="/images/{{ round.data.id }}.png" alt="Table" data-pin-id="{{ round.data.pinid }}"><br>
         <a class="button" href="/table/{{ round.data.id }}">View / Download</a>
       </div>
       {%- endfor -%}

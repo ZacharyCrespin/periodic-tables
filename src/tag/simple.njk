@@ -6,7 +6,7 @@ layout: 'tag.njk'
       {%- for simple in collections.simple | reverse -%}
       <div class="table">
         <h2>{{ simple.data.name }}</h2>
-        <img src="/table/{{ simple.data.id }}.png" alt="Table"><br>
+        <img src="/images/{{ simple.data.id }}.png" alt="Table" data-pin-id="{{ simple.data.pinid }}"><br>
         <a class="button" href="/table/{{ simple.data.id }}">View / Download</a>
       </div>
       {%- endfor -%}

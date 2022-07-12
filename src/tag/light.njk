@@ -6,7 +6,7 @@ layout: 'tag.njk'
       {%- for light in collections.light | reverse -%}
       <div class="table">
         <h2>{{ light.data.name }}</h2>
-        <img src="/table/{{ light.data.id }}.png" alt="Table"><br>
+        <img src="/images/{{ light.data.id }}.png" alt="Table" data-pin-id="{{ light.data.pinid }}"><br>
         <a class="button" href="/table/{{ light.data.id }}">View / Download</a>
       </div>
       {%- endfor -%}
