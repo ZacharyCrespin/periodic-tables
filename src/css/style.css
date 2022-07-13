@@ -75,8 +75,24 @@ a:hover {
         width: calc(100% - 2rem);
     }
 }
+.button {
+    display: inline-block;
+    margin: 1rem;
+    padding: .5rem 2rem;
+    color: black;
+    text-decoration: none;
+    border-radius: 100vh;
+    border: 1px solid lightgray;
+    box-shadow: 2px 2px 6px 0px #00000040;
+
+}
+.button:hover {
+    border: 1px solid gray;
+    color: black;
+}
 img {
-    max-width: 90%;
+    max-width: 80vw;
+    max-height: 80vh;
 }
 footer {
     margin: 1rem 3rem 0rem 3rem;

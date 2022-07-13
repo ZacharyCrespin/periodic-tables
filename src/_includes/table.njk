@@ -37,6 +37,7 @@
     </header>
     <main id="content">
     <h1>{{ name }}</h1>
+    <p>Uploaded {{ date | toLocaleString }} by {{ author }}</p>
     <img src="/images/{{ id }}.png" alt="{{ name }} Periodic Table" data-pin-id="{{ pinid }}"><br>
     <a class="button" href="/download/{{ id }}.zip" download="{{ name }}.zip">Download</a>
     </main>
