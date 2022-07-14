@@ -75,6 +75,9 @@ a:hover {
         width: calc(100% - 2rem);
     }
 }
+.table img {
+    width: 100%;
+}
 .button {
     display: inline-block;
     margin: 1rem;
