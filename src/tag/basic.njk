@@ -4,7 +4,7 @@ layout: 'tag.njk'
 ---
     <div class="gallery">
       {%- for basic in collections.basic | reverse -%}
-      <div class="table">
+      <div class="table {{ table.data.theam }}">
         <h2>{{ basic.data.name }}</h2>
         <img src="/images/{{ basic.data.id }}.png" alt="Table" data-pin-id="{{ basic.data.pinid }}"><br>
         <a class="button" href="/table/{{ basic.data.id }}">View / Download</a>

@@ -12,7 +12,7 @@ layout: 'gallery.njk'
     </div>
     <div class="gallery">
       {%- for table in collections.table | reverse -%}
-      <div class="table">
+      <div class="table {{ table.data.theam }}">
         <h2>{{ table.data.name }}</h2>
         <img src="/images/{{ table.data.id }}.png" alt="Table" data-pin-id="{{ table.data.pinid }}"><br>
         <a class="button" href="/table/{{ table.data.id }}">View / Download</a>

@@ -4,7 +4,7 @@ layout: 'tag.njk'
 ---
     <div class="gallery">
       {%- for dark in collections.dark | reverse -%}
-      <div class="table">
+      <div class="table {{ table.data.theam }}">
         <h2>{{ dark.data.name }}</h2>
         <img src="/images/{{ dark.data.id }}.png" alt="Table" data-pin-id="{{ dark.data.pinid }}"><br>
         <a class="button" href="/table/{{ dark.data.id }}">View / Download</a>
