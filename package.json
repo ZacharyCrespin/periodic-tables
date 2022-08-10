@@ -4,7 +4,8 @@
     "build": "eleventy"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.0"
+    "@11ty/eleventy": "^1.0.0",
+    "@sherby/eleventy-plugin-files-minifier": "^1.1.1"
   },
   "name": "periodic-tables",
   "description": "Free Periodic Tables",
@@ -15,12 +16,15 @@
   },
   "keywords": [
     "periodic-tables",
-    "periodic-table"
+    "11ty"
   ],
   "author": "Zachary C <contact@zacharyc.site> (https://zacharyc.site)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Z-C-Code/periodic-tables/issues"
   },
-  "homepage": "https://periodictables.zacharyc.site"
+  "homepage": "https://periodictables.zacharyc.site",
+  "dependencies": {
+    "clean-css": "^5.3.1"
+  }
 }

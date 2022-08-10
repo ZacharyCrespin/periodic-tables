@@ -12,6 +12,12 @@
     <meta name="theme-color" content="#ffffff">
     <meta name="author" content="Zachary Crespin">
     <meta name="generator" content="eleventy">
+    {% set css %}
+    {% include "style.css" %}
+    {% endset %}
+    <style>
+    {{ css | cssmin | safe }}
+    </style>
     <!-- Open Graph -->
     <meta property="og:url" content="https://periodictables.zacharyc.site{{ page.url }}">
     <meta property="og:title" content="{{ title }} | Free Periodic Tables">
