@@ -15,6 +15,24 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy('./src/robots.txt');
     eleventyConfig.addPassthroughCopy('./src/sitemap.xml');
 
+    eleventyConfig.addFilter("toTitleCase", function(value) {
+        function toTitleCase(value) {
+            return value.replace(
+                /\w\S*/g,
+                function(txt) {
+                return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+                }
+            );
+        }
+        return toTitleCase(value)
+    });
+    eleventyConfig.addFilter("toLowerCase", function(value) {
+        return value.toLowerCase()
+    });
+    eleventyConfig.addFilter("toUpperCase", function(value) {
+        return value.toUpperCase()
+    });
+
     // format dates
     eleventyConfig.addFilter("toLocaleString", (dateObj) => {
         return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
