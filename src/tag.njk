@@ -54,7 +54,7 @@ permalink: /tag/{{ tag }}/
       {% for post in taglist | reverse %}
         <div class="table {{ post.data.theam }}">
           <h2>{{ post.data.name }}</h2>
-          <img src="/images/{{ post.data.id }}.png" loading="lazy" alt="Table" data-pin-id="{{ post.data.pinid }}">
+          <img src="/images/{{ post.data.id }}-small.png" loading="lazy" alt="Table" data-pin-id="{{ post.data.pinid }}">
           <br>{% for tag in post.data.tags -%}
           {% if tag !== 'table' %}
           <a class="tag" href="/tag/{{ tag }}">{{ tag }}</a>

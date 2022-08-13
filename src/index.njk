@@ -8,7 +8,7 @@ layout: 'gallery.njk'
       {%- for table in collections.table | reverse -%}
       <div class="table {{ table.data.theam }}">
         <h2>{{ table.data.name }}</h2>
-        <img src="/images/{{ table.data.id }}.png" loading="lazy" alt="Table" data-pin-id="{{ table.data.pinid }}">
+        <img src="/images/{{ table.data.id }}-small.png" loading="lazy" alt="Table" data-pin-id="{{ table.data.pinid }}">
         <br>{% for tag in table.data.tags -%}
         {% if tag !== 'table' %}
         <a class="tag" href="/tag/{{ tag }}">{{ tag }}</a>
