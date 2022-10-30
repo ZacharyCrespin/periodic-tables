@@ -90,7 +90,6 @@ a:hover {
 }
 .button:hover {
     border: 1px solid gray;
-    color: black;
 }
 .tablepage img {
     width: 80%;
@@ -104,9 +103,6 @@ a:hover {
 }
 .dark a:hover {
     color: gray;
-}
-.dark .button:hover {
-    color: white;
 }
 footer {
     margin: 1rem 3rem 0rem 3rem;
