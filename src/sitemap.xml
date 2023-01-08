@@ -53,6 +53,14 @@
   <priority>0.90</priority>
 </url>
 <url>
+  <loc>https://periodictables.zacharyc.site/table/13</loc>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://periodictables.zacharyc.site/table/14/loc>
+  <priority>0.90</priority>
+</url>
+<url>
   <loc>https://periodictables.zacharyc.site/tag/dark</loc>
   <priority>0.90</priority>
 </url>
