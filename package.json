@@ -5,7 +5,8 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "^1.0.0",
-    "@sherby/eleventy-plugin-files-minifier": "^1.1.1"
+    "@sherby/eleventy-plugin-files-minifier": "^1.1.1",
+    "prettier": "2.8.2"
   },
   "name": "periodic-tables",
   "description": "Free Periodic Tables",

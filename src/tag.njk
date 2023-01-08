@@ -8,64 +8,61 @@ permalink: /tag/{{ tag }}/
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{{ tag }} Periodic Tables | Free Periodic Tables</title>
-    <meta name="description" content="{{ tag }} Periodic Tables | Free Periodic Tables">
-    <link rel="icon" type="image/png" href="/favicon.ico">
-    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-    <meta name="image" content="/images/share-image.png">
-    <meta name="theme-color" content="#ffffff">
-    <meta name="author" content="Zachary Crespin">
-    <meta name="generator" content="eleventy">
-    {% set css %}
-    {% include "style.css" %}
-    {% endset %}
+    <meta name="description" content="{{ tag }} Periodic Tables | Free Periodic Tables" />
+    <link rel="icon" type="image/png" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+    <meta name="image" content="/images/share-image.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="author" content="Zachary Crespin" />
+    <meta name="generator" content="eleventy" />
+    {% set css %} {% include "style.css" %} {% endset %}
     <style>
-    {{ css | cssmin | safe }}
+      {{ css | cssmin | safe }}
     </style>
     <!-- Open Graph -->
-    <meta property="og:url" content="https://periodictables.zacharyc.site{{ page.url }}">
-    <meta property="og:title" content="{{ tag }} Periodic Tables | Free Periodic Tables">
-    <meta property="og:description" content="{{ tag }} Periodic Tables | Free Periodic Tables">
-    <meta property="og:image" content="https://periodictables.zacharyc.site/images/share-image.png">
-    <meta property="og:image:alt" content="{{ tag }} Periodic Tables">
-    <meta property="og:site_name" content="Free Periodic Tables">
+    <meta property="og:url" content="https://periodictables.zacharyc.site{{ page.url }}" />
+    <meta property="og:title" content="{{ tag }} Periodic Tables | Free Periodic Tables" />
+    <meta property="og:description" content="{{ tag }} Periodic Tables | Free Periodic Tables" />
+    <meta property="og:image" content="https://periodictables.zacharyc.site/images/share-image.png" />
+    <meta property="og:image:alt" content="{{ tag }} Periodic Tables" />
+    <meta property="og:site_name" content="Free Periodic Tables" />
     <!-- Twitter -->
-    <meta name="twitter:title" content="{{ tag }} Periodic Tables | Free Periodic Tables">
-    <meta name="twitter:description" content="{{ tag }} Periodic Tables | Free Periodic Tables">
-    <meta name="twitter:image" content="https://periodictables.zacharyc.site/images/share-image.png">
-    <meta name="twitter:image:alt" content="{{ tag }} Periodic Tables">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@ZacharyCrespin">
-    <meta name="twitter:creator" content="@ZacharyCrespin">
-</head>
-<body>
+    <meta name="twitter:title" content="{{ tag }} Periodic Tables | Free Periodic Tables" />
+    <meta name="twitter:description" content="{{ tag }} Periodic Tables | Free Periodic Tables" />
+    <meta name="twitter:image" content="https://periodictables.zacharyc.site/images/share-image.png" />
+    <meta name="twitter:image:alt" content="{{ tag }} Periodic Tables" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@ZacharyCrespin" />
+    <meta name="twitter:creator" content="@ZacharyCrespin" />
+  </head>
+  <body>
     <header>
-    <nav class="menu" id="menu" role="navigation">
-      <a href="/">Home</a>
-    </nav>
+      <nav class="menu" id="menu" role="navigation">
+        <a href="/">Home</a>
+      </nav>
     </header>
     <main id="content">
       <h1>{{ tag | toTitleCase }} Periodic Tables</h1>
-{% include 'tagnav.njk' %}
-      <div class="gallery">
-      {% set taglist = collections[ tag ] %}
-      {% for post in taglist | reverse %}
-        <div class="table {{ post.data.theam }}">
-          <h2>{{ post.data.name }}</h2>
-          <img src="/images/{{ post.data.id }}-small.png" loading="lazy" alt="Table">
-          <br>{% for tag in post.data.tags -%}
+      {% include 'tagnav.njk' %}
+      <div class="gallery" aria-label="{{ tag }} Tables">
+        {% set taglist = collections[ tag ] %} {% for table in taglist | reverse %}
+        <div class="table {{ table.data.theam }}">
+          <h2>{{ table.data.name }}</h2>
+          <img src="/images/{{ table.data.id }}-small.png" loading="lazy" alt="{{ table.data.name }}" /><br/>
+          {% for tag in table.data.tags -%}
           {% if tag !== 'table' %}
           <a class="tag" href="/tag/{{ tag }}">{{ tag }}</a>
           {% endif %}
-          {%- endfor %}<br>
-          <a class="button" href="/table/{{ post.data.id }}">View / Download</a>
+          {%- endfor %}<br/>
+          <a class="button" href="/table/{{ table.data.id }}">View / Download</a>
         </div>
-      {% endfor %}
+        {% endfor %}
       </div>
     </main>
-{% include 'footer.njk' %}
-<script async src="https://analytics.zacharyc.site/tracker.js" data-ackee-server="https://analytics.zacharyc.site" data-ackee-domain-id="74427e40-d37e-42e1-a677-d26cdbb9934e"></script>
-</body>
+    {% include 'footer.njk' %}
+    <script async src="https://analytics.zacharyc.site/tracker.js" data-ackee-server="https://analytics.zacharyc.site" data-ackee-domain-id="74427e40-d37e-42e1-a677-d26cdbb9934e"></script>
+  </body>
 </html>

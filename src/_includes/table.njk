@@ -1,54 +1,49 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{{ name }} | Free Periodic Table</title>
-    <meta name="description" content="{{ name }}, a Free Periodic Table">
-    <link rel="icon" type="image/png" href="/favicon.ico">
-    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-    <meta name="image" content="/images/{{ id }}.png">
-    <meta name="theme-color" content="#ffffff">
-    <meta name="author" content="Zachary Crespin">
-    <meta name="generator" content="eleventy">
-    {% set css %}
-    {% include "style.css" %}
-    {% endset %}
+    <meta name="description" content="{{ name }}, a Free Periodic Table" />
+    <link rel="icon" type="image/png" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+    <meta name="image" content="/images/{{ id }}.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="author" content="Zachary Crespin" />
+    <meta name="generator" content="eleventy" />
+    {% set css %} {% include "style.css" %} {% endset %}
     <style>
-    {{ css | cssmin | safe }}
+      {{ css | cssmin | safe }}
     </style>
     <!-- Open Graph -->
-    <meta property="og:url" content="https://periodictables.zacharyc.site{{ page.url }}">
-    <meta property="og:title" content="{{ name }} | Free Periodic Table">
-    <meta property="og:description" content="{{ name }}, a Free Periodic Table">
-    <meta property="og:image" content="https://periodictables.zacharyc.site/images/{{ id }}.png">
-    <meta property="og:image:alt" content="{{ title }}">
-    <meta property="og:site_name" content="Free Periodic Tables">
-    <meta property="og:type" content="product">
-    <meta property="product:price:amount" content="00.00">
-    <meta property="product:price:currency" content="USD">
+    <meta property="og:url" content="https://periodictables.zacharyc.site{{ page.url }}" />
+    <meta property="og:title" content="{{ name }} | Free Periodic Table" />
+    <meta property="og:description" content="{{ name }}, a Free Periodic Table" />
+    <meta property="og:image" content="https://periodictables.zacharyc.site/images/{{ id }}.png" />
+    <meta property="og:image:alt" content="{{ title }}" />
+    <meta property="og:site_name" content="Free Periodic Tables" />
     <!-- Twitter -->
-    <meta name="twitter:title" content="{{ name }} | Free Periodic Table">
-    <meta name="twitter:description" content="{{ name }}, a Free Periodic Table">
-    <meta name="twitter:image" content="https://periodictables.zacharyc.site/images/{{ id }}.png">
-    <meta name="twitter:image:alt" content="{{ name }} Periodic Table">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@ZacharyCrespin">
-    <meta name="twitter:creator" content="@ZacharyCrespin">
-</head>
-<body class="tablepage {{ theam }}">
+    <meta name="twitter:title" content="{{ name }} | Free Periodic Table" />
+    <meta name="twitter:description" content="{{ name }}, a Free Periodic Table" />
+    <meta name="twitter:image" content="https://periodictables.zacharyc.site/images/{{ id }}.png" />
+    <meta name="twitter:image:alt" content="{{ name }} Periodic Table" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@ZacharyCrespin" />
+    <meta name="twitter:creator" content="@ZacharyCrespin" />
+  </head>
+  <body class="tablepage {{ theam }}">
     <header>
       <nav class="menu" id="menu" role="navigation">
         <a href="/">Home</a>
       </nav>
     </header>
     <main id="content">
-    <h1>{{ name }}</h1>
-    <p>Uploaded {{ date | toLocaleString }} by {{ author }}</p>
-    <img src="/images/{{ id }}.png" alt="{{ name }} Periodic Table"><br>
-    <a class="button" href="/download/{{ id }}.zip" download="{{ name }}.zip">Download</a>
+      <h1>{{ name }}</h1>
+      <p>Uploaded {{ date | toLocaleString }} by {{ author }}</p>
+      <img src="/images/{{ id }}.png" alt="{{ name }} Periodic Table" /><br/>
+      <a class="button" href="/download/{{ id }}.zip" download="{{ name }}.zip">Download</a>
     </main>
-{% include 'footer.njk' %}
-<script async src="https://analytics.zacharyc.site/tracker.js" data-ackee-server="https://analytics.zacharyc.site" data-ackee-domain-id="74427e40-d37e-42e1-a677-d26cdbb9934e"></script>
-</body>
+    {% include 'footer.njk' %}
+    <script async src="https://analytics.zacharyc.site/tracker.js" data-ackee-server="https://analytics.zacharyc.site" data-ackee-domain-id="74427e40-d37e-42e1-a677-d26cdbb9934e"></script>
+  </body>
 </html>

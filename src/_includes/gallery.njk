@@ -1,48 +1,46 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{{ title }} | Free Periodic Tables</title>
-    <meta name="description" content="{{ title }} | Free Periodic Tables">
-    <link rel="icon" type="image/png" href="/favicon.ico">
-    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-    <meta name="image" content="/images/share-image.png">
-    <meta name="theme-color" content="#ffffff">
-    <meta name="author" content="Zachary Crespin">
-    <meta name="generator" content="eleventy">
-    {% set css %}
-    {% include "style.css" %}
-    {% endset %}
+    <meta name="description" content="{{ title }} | Free Periodic Tables" />
+    <link rel="icon" type="image/png" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+    <meta name="image" content="/images/share-image.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="author" content="Zachary Crespin" />
+    <meta name="generator" content="eleventy" />
+    {% set css %} {% include "style.css" %} {% endset %}
     <style>
-    {{ css | cssmin | safe }}
+      {{ css | cssmin | safe }}
     </style>
     <!-- Open Graph -->
-    <meta property="og:url" content="https://periodictables.zacharyc.site{{ page.url }}">
-    <meta property="og:title" content="{{ title }} | Free Periodic Tables">
-    <meta property="og:description" content="{{ title }} | Free Periodic Tables">
-    <meta property="og:image" content="https://periodictables.zacharyc.site/images/share-image.png">
-    <meta property="og:image:alt" content="{{ title }}">
-    <meta property="og:site_name" content="Free Periodic Tables">
+    <meta property="og:url" content="https://periodictables.zacharyc.site{{ page.url }}" />
+    <meta property="og:title" content="{{ title }} | Free Periodic Tables" />
+    <meta property="og:description" content="{{ title }} | Free Periodic Tables" />
+    <meta property="og:image" content="https://periodictables.zacharyc.site/images/share-image.png" />
+    <meta property="og:image:alt" content="{{ title }}" />
+    <meta property="og:site_name" content="Free Periodic Tables" />
     <!-- Twitter -->
-    <meta name="twitter:title" content="{{ title }} | Free Periodic Tables">
-    <meta name="twitter:description" content="{{ title }} | Free Periodic Tables">
-    <meta name="twitter:image" content="https://periodictables.zacharyc.site/images/share-image.png">
-    <meta name="twitter:image:alt" content="{{ title }}">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@ZacharyCrespin">
-    <meta name="twitter:creator" content="@ZacharyCrespin">
-</head>
-<body>
-  <header>
-  <nav class="menu" id="menu" role="navigation">
-    <a href="/">Home</a>
-  </nav>
-  </header>
-  <main id="content">
-{{ content | safe }}
-  </main>
-{% include 'footer.njk' %}
-<script async src="https://analytics.zacharyc.site/tracker.js" data-ackee-server="https://analytics.zacharyc.site" data-ackee-domain-id="74427e40-d37e-42e1-a677-d26cdbb9934e"></script>
-</body>
+    <meta name="twitter:title" content="{{ title }} | Free Periodic Tables" />
+    <meta name="twitter:description" content="{{ title }} | Free Periodic Tables" />
+    <meta name="twitter:image" content="https://periodictables.zacharyc.site/images/share-image.png" />
+    <meta name="twitter:image:alt" content="{{ title }}" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@ZacharyCrespin" />
+    <meta name="twitter:creator" content="@ZacharyCrespin" />
+  </head>
+  <body>
+    <header>
+      <nav class="menu" id="menu" role="navigation">
+        <a href="/">Home</a>
+      </nav>
+    </header>
+    <main id="content">
+      {{ content | safe }}
+    </main>
+    {% include 'footer.njk' %}
+    <script async src="https://analytics.zacharyc.site/tracker.js" data-ackee-server="https://analytics.zacharyc.site" data-ackee-domain-id="74427e40-d37e-42e1-a677-d26cdbb9934e"></script>
+  </body>
 </html>
