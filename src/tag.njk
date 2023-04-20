@@ -54,10 +54,10 @@ permalink: /tag/{{ tag }}/
           <img src="/images/{{ table.data.id }}-small.png" loading="lazy" alt="{{ table.data.name }}" /><br/>
           {% for tag in table.data.tags -%}
           {% if tag !== 'table' %}
-          <a class="tag" href="/tag/{{ tag }}">{{ tag }}</a>
+          <a class="tag" href="/tag/{{ tag }}/">{{ tag }}</a>
           {% endif %}
           {%- endfor %}<br/>
-          <a class="button" href="/table/{{ table.data.id }}">View / Download</a>
+          <a class="button" href="/table/{{ table.data.id }}/">View / Download</a>
         </div>
         {% endfor %}
       </div>
