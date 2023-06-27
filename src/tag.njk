@@ -18,6 +18,7 @@ permalink: /tag/{{ tag }}/
     <meta name="theme-color" content="#ffffff" />
     <meta name="author" content="Zachary Crespin" />
     <meta name="generator" content="eleventy" />
+    <link rel="canonical" href="https://periodictables.zacharyc.site{{ page.url }}" />
     {% set css %} {% include "style.css" %} {% endset %}
     <style>
       {{ css | cssmin | safe }}
